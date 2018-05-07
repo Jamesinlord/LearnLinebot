@@ -40,7 +40,7 @@
 				)
 		)
 	);
-	$ch = curl_init('https://vision.googleapis.com/v1/images:annotate?key=AIzaSyBYCm4DIRHZtgm3Ko5uVeEe8hH_RPx9Omg');                                                                      
+	$ch = curl_init('https://vision.googleapis.com/v1/images:annotate?key=AIzaSyCiyGiCfjzzPR1JS8PrAxcsQWHdbycVwmg');                                                                      
 	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
 	curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_data));                                                                  
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
