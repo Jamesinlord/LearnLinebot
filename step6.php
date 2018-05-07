@@ -14,7 +14,7 @@
 	$ch = curl_init($url);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-		'Authorization: Bearer gd1gyH+Pc5TROu9ku5u/5tDvFnffsU8nXU69zXuhTgE0dIS5nVGmx9Js8PwijeUqgFuwWXzyJ14/N5FUmp/UXsmSJbUsxMGA6AW1gozlf6cbEgSGLiC02BEaRa5wUSqE7df8FOANP1WjPW8Mh/TgtwdB04t89/1O/w1cDnyilFU='
+		'Authorization: Bearer ZJdgvTca2PolpaISpcyEaxBHji/t+fEw27x1oJgYM+vVVZbjTDbrhRyqGizIpaHCqhosibP+OPgfq3YASQiP4tYMwWn1/K1ZFVaPWVZkLi+7NJ7PtteLA0HRZEDq8sBurJq0Ib/Sc9mtL2KPCjQPMQdB04t89/1O/w1cDnyilFU='
 	));
 	$json_content = curl_exec($ch);
 	curl_close($ch);
@@ -28,7 +28,7 @@
 				array (
 					"image" => array (
 						"source" => array (
-							"imageUri" => "http://139.59.123.8/chtChatBot/LineBot_learning/".$imageId.".jpeg"
+							"imageUri" => "https://sporzfy.com/chtChatBot/James/".$imageId.".jpeg"
 						)
 					),
 					"features" => array (
@@ -58,7 +58,7 @@
 		"messages" => array (
 			array (
 				"type" => "text",
-				"text" =>$ans_txt
+				"text" => $result -> responses[0] -> fullTextAnnotation -> text
 			)
 		)
 	);
